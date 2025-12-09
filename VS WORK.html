@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAIZAN PORTOFOLIO</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+  </body>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Faizan — Video Editor & Web Designer</title>
+
+        <!-- Google fonts -->
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+          rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      <body>
+        <header class="site-header">
+          <!-- <div class="wrap header-inner"> -->
+            <a class="brand" href="#hero">Faizan</a>
+
+           <div>
+             <nav class="nav" id="nav">
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#portfolio">Portfolio</a>
+              <a href="#skills">Skills</a>
+              <a href="#contact">Contact</a>
+              <a class="btn-outline" href="About_Me (1).pdf" download
+                >Download CV</a
+              >
+            </nav>
+
+            <button
+              id="menuToggle"
+              class="menu-toggle"
+              aria-label="Toggle menu"
+            ></button>
+           </div>
+          <!-- </div> -->
+        </header>
+
+        <main>
+          <!-- HERO -->
+          <section id="hero" class="hero">
+            <div class="wrap hero-grid">
+              <div class="hero-left">
+                <h1>Hi, I'm <span class="accent">Faizan</span></h1>
+                <p class="lead">
+                  Professional Video Editor & Web Designer from Bannu. I craft
+                  engaging stories through motion design, editing, and modern
+                  web experiences.
+                </p>
+
+                <div class="hero-cta">
+                  <a class="btn" href="#portfolio">View Portfolio</a>
+                  <a class="btn ghost" href="#contact">Hire Me</a>
+                </div>
+
+                <ul class="hero-stats">
+                  <li><strong>+50</strong> Projects</li>
+                  <li><strong>3</strong> Years Experience</li>
+                  <li><strong>100%</strong> Client Satisfaction</li>
+                </ul>
+                <hr />
+                <div class="skills-mini">
+                  <h3>What I do</h3>
+                  <ul>
+                    <li>Video Editing & Color Grading</li>
+                    <li>Motion Graphics (After Effects)</li>
+                    <li>UI / UX & Website Design</li>
+                    <li>Social Media Content & Ads</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="hero-right">
+                <div class="phone-frame neon">
+                  <!-- Replace with your profile image or a short looping video -->
+                  <h1>FAIZAN PORTOFOLIO</h1>
+                  <img src="mee.jpg.jpg" alt="Faizan profile" id="profileImg" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ABOUT -->
+          <section id="about" class="section">
+            <div class="wrap">
+              <h2>About Me</h2>
+              <div class="about-grid">
+                <div>
+                  <p>
+                    I'm Faizan, a dedicated video editor and web designer. I
+                    completed my FSc from Government Degree College No. 02
+                    (Computer Science) and a web development course at Jabiru
+                    Labs. I specialize in video editing, motion graphics, and
+                    building responsive websites that reflect brand stories.
+                  </p>
+
+                  <ul class="info-list">
+                    <li><strong>Location:</strong> Bannu, Pakistan</li>
+                    <li>
+                      <strong>Email:</strong>
+                      <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=faizankhan0330999@gmail.com"
+                        target="_blank"
+                      >
+                        faizankhan0330999@gmail.com
+                      </a>
+                    </li>
+
+                    <li><strong>Availability:</strong> Freelance / Contract</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SERVICES -->
+          <section id="services" class="section alt">
+            <div class="wrap">
+              <h2>Services</h2>
+              <div class="services-grid">
+                <div class="service-card">
+                  <h4>Video Editing</h4>
+                  <p>
+                    Short form, long form, color grading, and continuity editing
+                    for YouTube, social, and commercials.
+                  </p>
+                </div>
+                <div class="service-card">
+                  <h4>Motion Graphics</h4>
+                  <p>
+                    Titles, transitions, logo animations, and kinetic typography
+                    for dynamic visuals.
+                  </p>
+                </div>
+                <div class="service-card">
+                  <h4>Web Design</h4>
+                  <p>
+                    Responsive websites, landing pages, and portfolios optimized
+                    for performance & UX.
+                  </p>
+                </div>
+                <div class="service-card">
+                  <h4>Social Content</h4>
+                  <p>
+                    Social-first creatives, vertical edits, captions and format
+                    adaptations for platforms.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- PORTFOLIO -->
+          <section id="portfolio" class="section">
+            <div class="wrap">
+              <h2>Portfolio</h2>
+
+              <div class="portfolio-filters">
+                <button class="filter active" data-filter="*">All</button>
+                <button class="filter" data-filter="editing">Editing</button>
+                <button class="filter" data-filter="motion">Motion</button>
+                <button class="filter" data-filter="web">Web</button>
+              </div>
+
+              <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Card: supply thumbnails and data-video for the modal player -->
+                <article
+                  style="
+                    width: 220px;
+                    background: #0a0a0f;
+                    border-radius: 18px;
+                    overflow: hidden;
+                    box-shadow: 0 0 12px rgba(0, 255, 255, 0.35);
+                    transition: 0.3s ease;
+                    cursor: pointer;
+                    display: inline-block;
+                  "
+                >
+                  <div style="position: relative">
+                    <video
+                      src="Bussinuss video edit.mp4"
+                      muted
+                      loop
+                      controls
+                      style="
+                        width: 100%;
+                        height: fit-content;
+                        object-fit: cover;
+                        border-top-left-radius: 18px;
+                        border-top-right-radius: 18px;
+                      "
+                    ></video>
+                  </div>
+
+                  <div style="padding: 8px 10px">
+                    <h4
+                      style="
+                        color: white;
+                        font-size: 13px;
+                        font-family: Arial;
+                        margin: 0;
+                        letter-spacing: 0.3px;
+                      "
+                    >
+                      Brand Promo Edit
+                    </h4>
+
+                    <span
+                      style="
+                        color: #aaa;
+                        font-size: 10px;
+                        display: block;
+                        margin-top: 3px;
+                        font-family: Arial;
+                      "
+                    >
+                      50s Promo · Color Grading · Motion Cuts
+                    </span>
+                  </div>
+                </article>
+                <article
+                  style="
+                    width: 220px;
+                    background: #0a0a0f;
+                    border-radius: 18px;
+                    overflow: hidden;
+                    box-shadow: 0 0 12px rgba(0, 255, 255, 0.35);
+                    transition: 0.3s ease;
+                    cursor: pointer;
+                    display: inline-block;
+                  "
+                >
+                  <div style="position: relative">
+                    <video
+                      src="Bussinuss video edit.mp4"
+                      muted
+                      loop
+                      controls
+                      style="
+                        width: 100%;
+                        height: fit-content;
+                        object-fit: cover;
+                        border-top-left-radius: 18px;
+                        border-top-right-radius: 18px;
+                      "
+                    ></video>
+                  </div>
+
+                  <div style="padding: 8px 10px">
+                    <h4
+                      style="
+                        color: white;
+                        font-size: 13px;
+                        font-family: Arial;
+                        margin: 0;
+                        letter-spacing: 0.3px;
+                      "
+                    >
+                      Brand Promo Edit
+                    </h4>
+
+                    <span
+                      style="
+                        color: #aaa;
+                        font-size: 10px;
+                        display: block;
+                        margin-top: 3px;
+                        font-family: Arial;
+                      "
+                    >
+                      50s Promo · Color Grading · Motion Cuts
+                    </span>
+                  </div>
+                </article>
+                <article
+                  style="
+                    width: 220px;
+                    background: #0a0a0f;
+                    border-radius: 18px;
+                    overflow: hidden;
+                    box-shadow: 0 0 12px rgba(0, 255, 255, 0.35);
+                    transition: 0.3s ease;
+                    cursor: pointer;
+                    display: inline-block;
+                  "
+                >
+                  <div style="position: relative">
+                    <video
+                      src="Bussinuss video edit.mp4"
+                      muted
+                      loop
+                      controls
+                      style="
+                        width: 100%;
+                        height: fit-content;
+                        object-fit: cover;
+                        border-top-left-radius: 18px;
+                        border-top-right-radius: 18px;
+                      "
+                    ></video>
+                  </div>
+
+                  <div style="padding: 8px 10px">
+                    <h4
+                      style="
+                        color: white;
+                        font-size: 13px;
+                        font-family: Arial;
+                        margin: 0;
+                        letter-spacing: 0.3px;
+                      "
+                    >
+                      Brand Promo Edit
+                    </h4>
+
+                    <span
+                      style="
+                        color: #aaa;
+                        font-size: 10px;
+                        display: block;
+                        margin-top: 3px;
+                        font-family: Arial;
+                      "
+                    >
+                      50s Promo · Color Grading · Motion Cuts
+                    </span>
+                  </div>
+                </article>
+                <article
+                  style="
+                    width: 220px;
+                    background: #0a0a0f;
+                    border-radius: 18px;
+                    overflow: hidden;
+                    box-shadow: 0 0 12px rgba(0, 255, 255, 0.35);
+                    transition: 0.3s ease;
+                    cursor: pointer;
+                    display: inline-block;
+                  "
+                >
+                  <div style="position: relative">
+                    <video
+                      src="Bussinuss video edit.mp4"
+                      muted
+                      loop
+                      controls
+                      style="
+                        width: 100%;
+                        height: fit-content;
+                        object-fit: cover;
+                        border-top-left-radius: 18px;
+                        border-top-right-radius: 18px;
+                      "
+                    ></video>
+                  </div>
+
+                  <div style="padding: 8px 10px">
+                    <h4
+                      style="
+                        color: white;
+                        font-size: 13px;
+                        font-family: Arial;
+                        margin: 0;
+                        letter-spacing: 0.3px;
+                      "
+                    >
+                      Brand Promo Edit
+                    </h4>
+
+                    <span
+                      style="
+                        color: #aaa;
+                        font-size: 10px;
+                        display: block;
+                        margin-top: 3px;
+                        font-family: Arial;
+                      "
+                    >
+                      50s Promo · Color Grading · Motion Cuts
+                    </span>
+                  </div>
+                </article>
+                <article
+                  style="
+                    width: 220px;
+                    background: #0a0a0f;
+                    border-radius: 18px;
+                    overflow: hidden;
+                    box-shadow: 0 0 12px rgba(0, 255, 255, 0.35);
+                    transition: 0.3s ease;
+                    cursor: pointer;
+                    display: inline-block;
+                  "
+                >
+                  <div style="position: relative">
+                    <video
+                      src="Bussinuss video edit.mp4"
+                      muted
+                      loop
+                      controls
+                      style="
+                        width: 100%;
+                        height: fit-content;
+                        object-fit: cover;
+                        border-top-left-radius: 18px;
+                        border-top-right-radius: 18px;
+                      "
+                    ></video>
+                  </div>
+
+                  <div style="padding: 8px 10px">
+                    <h4
+                      style="
+                        color: white;
+                        font-size: 13px;
+                        font-family: Arial;
+                        margin: 0;
+                        letter-spacing: 0.3px;
+                      "
+                    >
+                      Brand Promo Edit
+                    </h4>
+
+                    <span
+                      style="
+                        color: #aaa;
+                        font-size: 10px;
+                        display: block;
+                        margin-top: 3px;
+                        font-family: Arial;
+                      "
+                    >
+                      50s Promo · Color Grading · Motion Cuts
+                    </span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <!-- SKILLS -->
+          <section id="skills" class="section alt">
+            <div class="wrap">
+              <h2>Skills</h2>
+              <div class="skills-grid">
+                <div class="skill">
+                  <label>Adobe Premiere</label>
+                  <div class="meter"><span style="width: 92%"></span></div>
+                </div>
+                <div class="skill">
+                  <label>After Effects</label>
+                  <div class="meter"><span style="width: 86%"></span></div>
+                </div>
+                <div class="skill">
+                  <label>Final Cut / DaVinci</label>
+                  <div class="meter"><span style="width: 78%"></span></div>
+                </div>
+                <div class="skill">
+                  <label>HTML / CSS / JS</label>
+                  <div class="meter"><span style="width: 80%"></span></div>
+                </div>
+                <div class="skill">
+                  <label>UI/UX Design</label>
+                  <div class="meter"><span style="width: 72%"></span></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- TESTIMONIALS -->
+          <section id="testimonials" class="section">
+            <div class="wrap">
+              <h2>Testimonials</h2>
+              <div class="testimonials">
+                <blockquote>
+                  <p>
+                    "Faizan turned our raw footage into a crisp brand story —
+                    fast delivery and great eye for pacing."
+                  </p>
+                  <cite>— Client A, Marketing Lead</cite>
+                </blockquote>
+                <blockquote>
+                  <p>
+                    "Professional and creative. Web landing page matched our
+                    identity perfectly."
+                  </p>
+                  <cite>— Client B, Founder</cite>
+                </blockquote>
+              </div>
+            </div>
+          </section>
+
+          <!-- CONTACT -->
+          <section id="contact" class="section alt">
+            <div class="wrap contact-grid">
+              <div>
+                <h2>Contact Me</h2>
+                <p>
+                  Interested in working together? Send me a message or book a
+                  quick call.
+                </p>
+
+                <ul class="contact-info">
+                  <li>
+                    <strong>Email:</strong>
+                    <a href="faizankhan0330999@gmail.com"
+                      >faizan0330999@gmail.com</a
+                    >
+                  </li>
+                  <li><strong>Phone:</strong> +923309993500</li>
+                  <li>
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/faizan-khan-4a8457395/" target="_blank">https://www.linkedin.com/in/faizan-khan-4a8457395/</a>
+                  </li>
+                  <li><strong>Location:</strong> Bannu, Pakistan</li>
+                </ul>
+              </div>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <label>
+                  <span>Name</span>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    placeholder="Your name"
+                  />
+                </label>
+
+                <label>
+                  <span>Email</span>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    placeholder="you@example.com"
+                  />
+                </label>
+
+                <label>
+                  <span>Message</span>
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="5"
+                    required
+                    placeholder="Tell me about your project..."
+                  ></textarea>
+                </label>
+
+                <div class="form-actions">
+                  <button class="btn" type="submit">Send Message</button>
+                  <button class="btn ghost" type="reset">Reset</button>
+                </div>
+
+                <div
+                  id="formNotice"
+                  class="form-notice"
+                  aria-live="polite"
+                ></div>
+              </form>
+            </div>
+          </section>
+        </main>
+
+        <footer class="site-footer">
+          <div class="wrap">
+            <div class="footer-row">
+              <small
+                >© <span id="year"></span> Faizan — Video Editor & Web
+                Designer</small
+              >
+              <div class="socials">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="LinkedIn">IN</a>
+                <a href="#" aria-label="YouTube">YT</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- Modal video player -->
+        <div class="modal" id="videoModal" aria-hidden="true">
+          <div class="modal-inner">
+            <button class="modal-close" id="modalClose" aria-label="Close">
+              ×
+            </button>
+            <video id="modalVideo" controls playsinline></video>
+            <div class="modal-meta">
+              <h3 id="modalTitle">Project</h3>
+              <p id="modalDesc">Description</p>
+            </div>
+          </div>
+        </div>
+
+        <script src="script.js"></script>
+      </body>
+    </html>
+  </body>
+</html>
